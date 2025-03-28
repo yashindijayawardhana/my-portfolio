@@ -1,34 +1,141 @@
-body {
-    font-family: Arial, sans-serif;
+/* General Styles */
+* {
     margin: 0;
     padding: 0;
-    text-align: center;
+    box-sizing: border-box;
+}
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #f4f4f4;
+    color: #333;
 }
 header {
-    background-color: #333;
-    color: white;
+    background: #333;
     padding: 20px;
+    color: #fff;
 }
-nav {
-    margin-top: 10px;
-}
-nav a {
-    margin: 0 10px;
-    text-decoration: none;
-    color: white;
-}
-.project {
-    border: 1px solid #ddd;
-    padding: 10px;
-    margin: 10px;
-}
-#contact-form {
+nav ul {
+    list-style: none;
     display: flex;
-    flex-direction: column;
-    width: 300px;
-    margin: auto;
+    justify-content: center;
 }
-#contact-form input, textarea {
+nav ul li {
+    margin: 0 20px;
+}
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+}
+nav ul li a:hover {
+    color: #f1f1f1;
+}
+
+/* Home Section */
+.home {
+    background: #1b0401;
+    color: #faf7f7;
+    text-align: center;
+    padding: 100px 0;
+}
+.home h1 {
+    font-size: 3rem;
+}
+.profile-img {
+    width: 170px; /* Adjust the width of the image */
+    height: 150px; /* Maintain the aspect ratio */
+    border-radius: 50%; /* Make the image circular */
+    border: 3px solid #fff; /* Optional: adds a border around the image */
+    margin-bottom: 20px; /* Adds space below the image */
+}
+
+/* About Section */
+.about {
+    padding: 50px;
+    text-align: center;
+    background: #fff;
+}
+.about h2 {
+    margin-bottom: 20px;
+    font-size: 2rem;
+}
+
+/* Projects Section */
+.projects {
+    padding: 50px;
+    background: #f9f9f9;
+}
+.projects h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+.project-container {
+    display: flex;
+    justify-content: space-around;
+}
+.project-card {
+    background: #fff;
+    padding: 20px;
+    border: 1px solid #ddd;
+    width: 30%;
+    text-align: center;
+}
+.project-card h3 {
     margin-bottom: 10px;
-    padding: 8px;
+}
+.project-card a {
+    text-decoration: none;
+    color: #4CAF50;
+    font-weight: bold;
+}
+
+/* Contact Section */
+.contact {
+    padding: 50px;
+    background: #fff;
+    text-align: center;
+}
+.contact h2 {
+    margin-bottom: 20px;
+    font-size: 2rem;
+}
+.contact form {
+    max-width: 500px;
+    margin: 0 auto;
+    text-align: left;
+}
+.contact form label {
+    display: block;
+    margin-bottom: 5px;
+    font-size: 1rem;
+}
+.contact form input,
+.contact form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ddd;
+    font-size: 1rem;
+}
+.contact form button {
+    background: #4CAF50;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+}
+.contact form button:hover {
+    background: #45a049;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    background: #333;
+    color: #fff;
+    padding: 10px 0;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
 }
